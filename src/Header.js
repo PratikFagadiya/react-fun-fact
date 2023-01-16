@@ -7,22 +7,28 @@ export default function Header() {
             <img
                 src={logo} className="nav-logo" alt="logo"/>
 
+            <h1>React Fact</h1>
+
             <ul className={'nav-header-items'}>
                 <li onClick={() => {
                     alert('Pricing Clicked')
                 }}
                 >Pricing
                 </li>
+
                 <li
                     onClick={() => {
                         alert('About Clicked')
                     }}>About
                 </li>
+
                 <li onClick={() => {
                     alert('Contact Clicked')
                 }}>Contact
                 </li>
+
             </ul>
+
         </nav>
     </header>)
 }

@@ -12,11 +12,17 @@
     top: 0;
     background-color: #212121;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+    color: white;
 }
 
 .nav-header-items > li {
     padding: 10px;
     color: white;
+    font-family: Avenir;
+}
+
+.nav > h1 {
+    margin-right: auto;
     font-family: Avenir;
 }
 
@@ -46,6 +52,14 @@ body {
 .main-content, .footer {
     padding-left: 20px;
     font-family: Avenir;
+    margin: 0px;
+}
+
+.main-content {
+    background-image: url("logo.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: bottom;
 }
 
 h1 {
@@ -55,6 +69,14 @@ h1 {
 li {
     color: white;
     font-family: Avenir;
+    padding-block: 10px;
+}
+
+
+/*This marker helps to change bullet point color*/
+li::marker {
+    color: aqua;
+    font-size: 1.1rem;
 }
 
 small {
