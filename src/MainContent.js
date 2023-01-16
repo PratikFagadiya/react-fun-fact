@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function MainContent() {
+
     return (<div className={'main-content'}>
         <h1>Fun fact about React</h1>
 
@@ -13,4 +14,5 @@ export default function MainContent() {
 
         </ol>
     </div>)
+
 }
