@@ -1,3 +1,14 @@
+.light-theme {
+    height: 100vh;
+    --header-color: white
+}
+
+.dark-theme {
+    height: 100vh;
+    --header-color: #212121,
+
+}
+
 .nav-header-items {
     list-style: none;
     display: flex;
@@ -10,7 +21,7 @@
     align-items: center;
     position: sticky;
     top: 0;
-    background-color: #212121;
+    background-color: var(--header-color);
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
     color: white;
 }
@@ -19,6 +30,7 @@
     padding: 10px;
     color: white;
     font-family: Avenir;
+    cursor: pointer;
 }
 
 .nav > h1 {
