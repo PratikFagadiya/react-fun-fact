@@ -2,7 +2,10 @@ import logo from "./logo.svg";
 import React from "react";
 import './App.css'
 
-export default function Header() {
+import DarkMode from './night-mode.png'
+import LightModel from './light.png'
+
+export default function Header(props) {
     return (<header>
         <nav className={'nav'}>
             <img
@@ -11,6 +14,7 @@ export default function Header() {
             <h1>React Fact</h1>
 
             <ul className={'nav-header-items'}>
+
                 <li onClick={() => {
                     alert('Pricing Clicked')
                 }}
@@ -29,6 +33,10 @@ export default function Header() {
                 </li>
 
             </ul>
+
+            {props.theme === 'dark-theme' ?
+                <img src={LightModel} alt={'Light Mode'} onClick={props.changeTheme} width={'35px'}/> :
+                <img src={DarkMode} alt={'Dark Mode'} onClick={props.changeTheme} width={'35px'}/>}
 
         </nav>
     </header>)

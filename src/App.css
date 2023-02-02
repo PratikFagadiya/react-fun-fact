@@ -1,12 +1,21 @@
 .light-theme {
     height: 100vh;
-    --header-color: white
+    --header-color: #f3f4f6;
+    --header-text-color: #4f6c8a;
+    --body-background-color: #ffffff;
+    --bullet-point-color: #087ea4;
+    --list-text-color: #23272f;
+    background-color: var(--body-background-color);
 }
 
 .dark-theme {
     height: 100vh;
-    --header-color: #212121,
-
+    --header-color: #374151;
+    --header-text-color: #ebebef;
+    --body-background-color: #23272f;
+    --bullet-point-color: #087ea4;
+    --list-text-color: #f6f7f9;
+    background-color: var(--body-background-color);
 }
 
 .nav-header-items {
@@ -23,12 +32,13 @@
     top: 0;
     background-color: var(--header-color);
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
-    color: white;
+    color: var(--header-text-color);
+    padding-right: 20px;
 }
 
 .nav-header-items > li {
     padding: 10px;
-    color: white;
+    color: var(--header-text-color);
     font-family: Avenir;
     cursor: pointer;
 }
@@ -36,6 +46,7 @@
 .nav > h1 {
     margin-right: auto;
     font-family: Avenir;
+    color: var(--header-text-color);
 }
 
 .nav-logo {
@@ -53,7 +64,7 @@
 }
 
 body {
-    background-color: #282828;
+    background-color: var(--body-background-color);
 }
 
 .main-content > h1 {
@@ -75,11 +86,11 @@ body {
 }
 
 h1 {
-    color: white;
+    color: var(--list-text-color);
 }
 
 li {
-    color: white;
+    color: var(--list-text-color);
     font-family: Avenir;
     padding-block: 10px;
 }
@@ -87,10 +98,10 @@ li {
 
 /*This marker helps to change bullet point color*/
 li::marker {
-    color: aqua;
+    color: var(--bullet-point-color);
     font-size: 1.1rem;
 }
 
 small {
-    color: white;
+    color: var(--list-text-color);
 }
