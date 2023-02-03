@@ -1,8 +1,11 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
+const dotenv = require('dotenv');
 
-const PORT = 4000
+dotenv.config();
+
+const PORT = process.env.PORT || 4000
 
 app.use(cors())
 app.use(express.json())
